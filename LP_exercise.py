@@ -15,8 +15,6 @@ model.C1 = pyo.Constraint(expr= x+y <=8)
 model.C2 = pyo.Constraint(expr= 8*x + 3*y >= -24)
 model.C3 = pyo.Constraint(expr= -6*y + 8*y <= 48)
 model.C4 = pyo.Constraint(expr= 3*x + 5*y <= 15)
-model.C5 = pyo.Constraint(expr= x <= 3)
-model.C6 = pyo.Constraint(expr= y >= 0)
 
 model.obj = pyo.Objective(expr= -4*x - 2*y, sense=pyo.minimize)
 
